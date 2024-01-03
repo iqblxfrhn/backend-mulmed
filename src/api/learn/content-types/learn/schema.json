@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learns",
+  "info": {
+    "singularName": "learn",
+    "pluralName": "learns",
+    "displayName": "Learn",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "desc": {
+      "type": "text"
+    }
+  }
+}
