@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materis",
+  "info": {
+    "singularName": "materi",
+    "pluralName": "materis",
+    "displayName": "materi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
