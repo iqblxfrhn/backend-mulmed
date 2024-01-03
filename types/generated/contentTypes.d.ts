@@ -377,6 +377,11 @@ export interface ApiLearnLearn extends Schema.CollectionType {
     name: Attribute.String;
     image: Attribute.Media;
     desc: Attribute.Text;
+    materis: Attribute.Relation<
+      'api::learn.learn',
+      'oneToMany',
+      'api::materi.materi'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -408,6 +413,11 @@ export interface ApiMateriMateri extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     url: Attribute.String;
+    learn: Attribute.Relation<
+      'api::materi.materi',
+      'manyToOne',
+      'api::learn.learn'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

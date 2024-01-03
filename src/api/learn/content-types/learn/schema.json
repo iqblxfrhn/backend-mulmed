@@ -25,6 +25,12 @@
     },
     "desc": {
       "type": "text"
+    },
+    "materis": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::materi.materi",
+      "mappedBy": "learn"
     }
   }
 }
